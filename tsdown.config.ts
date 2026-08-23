@@ -83,7 +83,10 @@ function injectTag(pluginId: string, fileId: string, cssText: string): string {
 
 /** Simple CSS Modules transform (mirror of dsh-aigc-canvas's css-modules). */
 function transformCssModules(filename: string, source: Buffer): { classMap: Record<string, string>; cssText: string } {
-  const hash = Array.from(filename).reduce((acc, ch) => ((acc << 5) - acc + ch.charCodeAt(0)) | 0, 0).toString(36).replace('-', '')
+  // Hash a repository-relative path so a checkout on macOS, Linux, Windows,
+  // or a different runner directory produces the same committed bundle.
+  const stableFilename = relative(REPOSITORY_ROOT, filename).split(sep).join('/')
+  const hash = Array.from(stableFilename).reduce((acc, ch) => ((acc << 5) - acc + ch.charCodeAt(0)) | 0, 0).toString(36).replace('-', '')
   const cssText = source.toString('utf8')
   const classMap: Record<string, string> = {}
   const classPattern = /\.([a-zA-Z_][a-zA-Z0-9_-]*)/g
@@ -129,6 +132,7 @@ const clientConfig: UserConfig = {
   platform: 'browser',
   target: 'es2024',
   dts: false,
+  minify: true,
   sourcemap: true,
   clean: false,
   external: [...CLIENT_EXTERNALS],
