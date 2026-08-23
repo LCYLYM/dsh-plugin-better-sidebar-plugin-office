@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "resetBudget": "Y",
+  "resetBudget": "N",
   "verified": {
     "snapshot_key": "9faf2f06520581ebfc71bf0d7be72f976ba44a6632a4477f821d5a84c9cbf0f4",
     "source_commit": "db090d65b2e8e41ad8f426569d1c83ac2a61af43",
@@ -47,20 +47,78 @@
   },
   "campaigns": {
     "0.1.1-rc.2": {
-      "epoch": 1,
-      "history": [],
-      "lifetime_active_ms": 0,
-      "lifetime_attempts": 0,
-      "status": "BLOCKED",
-      "automatic_repair_used": true,
-      "attempts_used": 1,
-      "base_commit": "e47ded2f80742879a1d9f89ffe7d971b4d26248c",
-      "repair_dsh_version": "0.1.1-rc.1",
+      "epoch": 2,
+      "history": [
+        {
+          "epoch": 1,
+          "status": "BLOCKED",
+          "usage": {
+            "inputTokens": 29409,
+            "outputTokens": 9550,
+            "cacheReadTokens": 803456,
+            "cacheWriteTokens": 0,
+            "reasoningTokens": 5181,
+            "totalTokens": 842415,
+            "sessionFiles": 1
+          },
+          "estimated_cny": {
+            "amount": 0.254523,
+            "band": "peak",
+            "revision": "deepseek-public-2026-08-21",
+            "known": true
+          },
+          "active_ms": 167257,
+          "attempts_used": 1,
+          "limits": {
+            "max_tokens": 600000,
+            "max_cny": 3,
+            "max_wall_minutes": 60,
+            "max_attempts": 2
+          },
+          "finished_at": "2026-08-23T09:11:09.106Z"
+        }
+      ],
+      "lifetime_active_ms": 167257,
+      "lifetime_attempts": 1,
+      "status": "BLOCKED_CONFIG",
+      "automatic_repair_used": false,
+      "attempts_used": 0,
+      "base_commit": "7b9ea7fa0baaf2d02bd5624b722fe56deebee7d7",
+      "repair_dsh_version": "0.1.1-rc.2",
       "provider": "deepseek-official",
       "model": "deepseek-v4-flash-vision-exp",
       "route_fingerprint": "faaa71af208fbbaf61375c561faef30958eceba731b9fccdcceca6275619706e",
-      "input_fingerprint": "dade50983645c36d1f9e615a6e68f4ba58cc44970c2f821424cd8d3dab9e8c7a",
+      "input_fingerprint": "7cc9efadf82ed922a80a11b1381c0d2bb5a1de37cb031c7ed9fb60c80048974e",
       "usage": {
+        "inputTokens": 21353,
+        "outputTokens": 10749,
+        "cacheReadTokens": 761728,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 6138,
+        "totalTokens": 793830,
+        "sessionFiles": 1
+      },
+      "estimated_cny": {
+        "amount": 0.236973,
+        "band": "peak",
+        "revision": "deepseek-public-2026-08-21",
+        "known": true
+      },
+      "active_ms": 152147,
+      "converge_message_sent": false,
+      "converge_message_due": false,
+      "limits": {
+        "max_tokens": 4000000,
+        "max_cny": 3,
+        "max_wall_minutes": 60,
+        "max_attempts": 2
+      },
+      "blocker": {
+        "code": "MODEL_CREDENTIAL_REJECTED",
+        "message": "模型服务拒绝了凭据（401/403）。请更新仓库 Secret 后手工重跑。"
+      },
+      "finished_at": "2026-08-23T09:23:18.701Z",
+      "lifetime_usage": {
         "inputTokens": 29409,
         "outputTokens": 9550,
         "cacheReadTokens": 803456,
@@ -68,27 +126,7 @@
         "reasoningTokens": 5181,
         "totalTokens": 842415,
         "sessionFiles": 1
-      },
-      "estimated_cny": {
-        "amount": 0.254523,
-        "band": "peak",
-        "revision": "deepseek-public-2026-08-21",
-        "known": true
-      },
-      "active_ms": 167257,
-      "converge_message_sent": false,
-      "converge_message_due": false,
-      "limits": {
-        "max_tokens": 600000,
-        "max_cny": 3,
-        "max_wall_minutes": 60,
-        "max_attempts": 2
-      },
-      "blocker": {
-        "code": "BUDGET_EXHAUSTED",
-        "message": "本版本维修预算已用完，需要 resetBudget 或增加额度后才能继续。"
-      },
-      "finished_at": "2026-08-23T09:11:09.106Z"
+      }
     }
   }
 }
