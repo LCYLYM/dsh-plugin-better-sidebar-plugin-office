@@ -2,19 +2,19 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "9faf2f06520581ebfc71bf0d7be72f976ba44a6632a4477f821d5a84c9cbf0f4",
-    "source_commit": "db090d65b2e8e41ad8f426569d1c83ac2a61af43",
-    "source_tree_digest": "d50f7b1861230ccff78aae84856bf18de142b1385dd3dbdf8ec8899a26a876b2",
+    "snapshot_key": "1522eab038e2df45b79bf4706a616fd34d81fd8bcfc4f31c807ee1d434cc006f",
+    "source_commit": "0789d9bacfb20ff22e08109ec6cd9f66166ac9ef",
+    "source_tree_digest": "4251a3480ef41e87844a631efb732b6a8be9faaa343a2ee3f031201b2f130882",
     "dsh": {
       "package": "@deepseek-ai/dsh",
-      "version": "0.1.1-rc.1",
-      "integrity": "sha512-HVauMT0F7MWUctkxzBcu5PMFc8j0lm0kX+4IbcUsA7Oh+/xv7xhigEDP0SaSOM/kR48U/BldHbZru116DcZz0w==",
-      "graph_digest": "ea444cc8ccd82eeb3fae7c355428b08ec4a01e89289670edd4ae112a40465a28"
+      "version": "0.1.1-rc.2",
+      "integrity": "sha512-UP1UIh6q3Gme/yXRn/QL2P8IsVlv8Shpg22TRJIZPsCRWLm4CBiA1MUvXmJAfsOEETBMLAl+xWPtFw6ICsN3wg==",
+      "graph_digest": "f585d69f7d868ef19178277d2d2fc1b50649d71709ae2f1c3b63da515482ccaa"
     },
     "plugin": {
       "package": "@huanlin/dsh-plugin-better-sidebar-plugin-office",
       "version": "0.1.0",
-      "tarball_sha256": "8a12d24214d0f2f17440d03c6dbf75f2b2b1e4254e614ef26892396179091b5f",
+      "tarball_sha256": "1a11c6a01c4ba8de8286b06aeb9953312b332d8d18ab0b8b38a55abd86179234",
       "contract_sha256": "c657729dd57ee25c0ea1e68b58a3772facd62f7afa77161b2803d0f89391423a"
     },
     "runtime": {
@@ -36,14 +36,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000001041",
+        "actualLabel": "GitHub Actions 1000001116",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-08-23T08:45:21.658Z",
-    "report_url": "https://github.com/LCYLYM/dsh-plugin-better-sidebar-plugin-office/actions/runs/32629065581"
+    "verified_at": "2026-08-23T09:34:31.370Z",
+    "report_url": "https://github.com/LCYLYM/dsh-plugin-better-sidebar-plugin-office/actions/runs/32631118927"
   },
   "campaigns": {
     "0.1.1-rc.2": {
@@ -80,31 +80,31 @@
       ],
       "lifetime_active_ms": 167257,
       "lifetime_attempts": 1,
-      "status": "BLOCKED_CONFIG",
-      "automatic_repair_used": false,
-      "attempts_used": 0,
-      "base_commit": "7b9ea7fa0baaf2d02bd5624b722fe56deebee7d7",
+      "status": "PASS",
+      "automatic_repair_used": true,
+      "attempts_used": 1,
+      "base_commit": "0789d9bacfb20ff22e08109ec6cd9f66166ac9ef",
       "repair_dsh_version": "0.1.1-rc.2",
       "provider": "deepseek-official",
       "model": "deepseek-v4-flash-vision-exp",
       "route_fingerprint": "faaa71af208fbbaf61375c561faef30958eceba731b9fccdcceca6275619706e",
-      "input_fingerprint": "7cc9efadf82ed922a80a11b1381c0d2bb5a1de37cb031c7ed9fb60c80048974e",
+      "input_fingerprint": "10691f19181e0e5b9df6867235e0a2ba986fc73516d467ef1fe64955a7212c84",
       "usage": {
-        "inputTokens": 21353,
-        "outputTokens": 10749,
-        "cacheReadTokens": 761728,
+        "inputTokens": 35855,
+        "outputTokens": 21508,
+        "cacheReadTokens": 1473152,
         "cacheWriteTokens": 0,
-        "reasoningTokens": 6138,
-        "totalTokens": 793830,
-        "sessionFiles": 1
+        "reasoningTokens": 12188,
+        "totalTokens": 1530515,
+        "sessionFiles": 2
       },
       "estimated_cny": {
-        "amount": 0.236973,
+        "amount": 0.448452,
         "band": "peak",
         "revision": "deepseek-public-2026-08-21",
         "known": true
       },
-      "active_ms": 152147,
+      "active_ms": 343858,
       "converge_message_sent": false,
       "converge_message_due": false,
       "limits": {
@@ -117,7 +117,7 @@
         "code": "MODEL_CREDENTIAL_REJECTED",
         "message": "模型服务拒绝了凭据（401/403）。请更新仓库 Secret 后手工重跑。"
       },
-      "finished_at": "2026-08-23T09:23:18.701Z",
+      "finished_at": "2026-08-23T09:34:31.892Z",
       "lifetime_usage": {
         "inputTokens": 29409,
         "outputTokens": 9550,
