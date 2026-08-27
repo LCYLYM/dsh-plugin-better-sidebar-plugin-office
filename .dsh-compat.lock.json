@@ -2,14 +2,14 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "1522eab038e2df45b79bf4706a616fd34d81fd8bcfc4f31c807ee1d434cc006f",
-    "source_commit": "0789d9bacfb20ff22e08109ec6cd9f66166ac9ef",
-    "source_tree_digest": "4251a3480ef41e87844a631efb732b6a8be9faaa343a2ee3f031201b2f130882",
+    "snapshot_key": "1b70dfc47a10d21371a2ed8885d4632c2a2d88227566f61dc709f86a25cd53e7",
+    "source_commit": "8b6d776583d04db3c409cfdf27f33d91b91678e8",
+    "source_tree_digest": "1931d29d37446ca6842a0aaeb5564802b5e73ed054542e92ea961cf9b7c8e150",
     "dsh": {
       "package": "@deepseek-ai/dsh",
       "version": "0.1.1-rc.2",
       "integrity": "sha512-UP1UIh6q3Gme/yXRn/QL2P8IsVlv8Shpg22TRJIZPsCRWLm4CBiA1MUvXmJAfsOEETBMLAl+xWPtFw6ICsN3wg==",
-      "graph_digest": "f585d69f7d868ef19178277d2d2fc1b50649d71709ae2f1c3b63da515482ccaa"
+      "graph_digest": "d2e06350c731443286c624fd696211030f85e3d25f36c7bb4ea6d484052edcda"
     },
     "plugin": {
       "package": "@huanlin/dsh-plugin-better-sidebar-plugin-office",
@@ -36,14 +36,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000001116",
+        "actualLabel": "GitHub Actions 1000001243",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-08-23T09:34:31.370Z",
-    "report_url": "https://github.com/LCYLYM/dsh-plugin-better-sidebar-plugin-office/actions/runs/32631118927"
+    "verified_at": "2026-08-27T05:55:16.089Z",
+    "report_url": "https://github.com/LCYLYM/dsh-plugin-better-sidebar-plugin-office/actions/runs/33043994867"
   },
   "campaigns": {
     "0.1.1-rc.2": {
