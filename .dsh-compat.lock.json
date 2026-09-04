@@ -1,20 +1,28 @@
 {
   "schema": 1,
-  "resetBudget": "Y",
+  "resetBudget": "N",
   "verified": {
-    "snapshot_key": "1522eab038e2df45b79bf4706a616fd34d81fd8bcfc4f31c807ee1d434cc006f",
-    "source_commit": "0789d9bacfb20ff22e08109ec6cd9f66166ac9ef",
-    "source_tree_digest": "4251a3480ef41e87844a631efb732b6a8be9faaa343a2ee3f031201b2f130882",
+    "snapshot_key": "37f6bd7f3bdc4dec159b84978935e12548a8fc82e0646876fdde368c2cabcdea",
+    "source_commit": "a0c9f1c63927365e1ae63e04d4d91bfa2234e269",
+    "source_tree_digest": "78e9184272500b2f59aab3bbfe03c39505008cef82d10f34871156d95bd24764",
     "dsh": {
       "package": "@deepseek-ai/dsh",
-      "version": "0.1.1-rc.2",
-      "integrity": "sha512-UP1UIh6q3Gme/yXRn/QL2P8IsVlv8Shpg22TRJIZPsCRWLm4CBiA1MUvXmJAfsOEETBMLAl+xWPtFw6ICsN3wg==",
-      "graph_digest": "f585d69f7d868ef19178277d2d2fc1b50649d71709ae2f1c3b63da515482ccaa"
+      "version": "0.1.2-rc.1",
+      "integrity": "sha512-RPq48TzxvwpdT9/7W1tbhZDBMmeK+bxDrX9cqQC27Wx/LqtgJF8PSa3b3xriU8oxtvhwYmk21w2cej3uMQrnVA==",
+      "graph_digest": "99ad12269dac9fb3bee0452b16aa5727e79efdb1eacd6c63a3bce3aeb384c523",
+      "release": {
+        "tag": "dsh-v0.1.2-rc.1",
+        "version": "0.1.2-rc.1",
+        "commit": "a66e4702047846cdaa10c66c9d3df3951f5ea70d",
+        "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.1.2-rc.1",
+        "publishedAt": "2026-09-03T06:06:07Z",
+        "prerelease": true
+      }
     },
     "plugin": {
       "package": "@huanlin/dsh-plugin-better-sidebar-plugin-office",
       "version": "0.1.0",
-      "tarball_sha256": "1a11c6a01c4ba8de8286b06aeb9953312b332d8d18ab0b8b38a55abd86179234",
+      "tarball_sha256": "e774e272b03cd66517c04a17aa88e285e52225f5f63ed63129c334ab59a384a3",
       "contract_sha256": "c657729dd57ee25c0ea1e68b58a3772facd62f7afa77161b2803d0f89391423a"
     },
     "runtime": {
@@ -36,14 +44,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000001116",
+        "actualLabel": "GitHub Actions 1000001684",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-08-23T09:34:31.370Z",
-    "report_url": "https://github.com/LCYLYM/dsh-plugin-better-sidebar-plugin-office/actions/runs/32631118927"
+    "verified_at": "2026-09-04T08:57:34.901Z",
+    "report_url": "https://github.com/LCYLYM/dsh-plugin-better-sidebar-plugin-office/actions/runs/33854525152"
   },
   "campaigns": {
     "0.1.1-rc.2": {
@@ -129,7 +137,7 @@
       }
     },
     "0.1.2-rc.1": {
-      "epoch": 2,
+      "epoch": 3,
       "history": [
         {
           "epoch": 1,
@@ -158,37 +166,65 @@
             "max_attempts": 2
           },
           "finished_at": "2026-09-03T12:21:32.057Z"
+        },
+        {
+          "epoch": 2,
+          "status": "BLOCKED_CONTRACT",
+          "usage": {
+            "inputTokens": 413642,
+            "outputTokens": 18270,
+            "cacheReadTokens": 1755648,
+            "cacheWriteTokens": 0,
+            "reasoningTokens": 10619,
+            "totalTokens": 2187560,
+            "sessionFiles": 2
+          },
+          "estimated_cny": {
+            "amount": null,
+            "band": "low_price",
+            "revision": "deepseek-public-2026-08-21",
+            "known": false
+          },
+          "active_ms": 455523,
+          "attempts_used": 2,
+          "limits": {
+            "max_tokens": 4000000,
+            "max_cny": 3,
+            "max_wall_minutes": 60,
+            "max_attempts": 2
+          },
+          "finished_at": "2026-09-04T05:13:58.326Z"
         }
       ],
-      "lifetime_active_ms": 233203,
-      "lifetime_attempts": 1,
-      "status": "BLOCKED_CONTRACT",
+      "lifetime_active_ms": 688726,
+      "lifetime_attempts": 3,
+      "status": "PASS",
       "automatic_repair_used": true,
-      "attempts_used": 2,
-      "base_commit": "a4947c00ea31cccf109208f5f42f64ec659fed2d",
+      "attempts_used": 1,
+      "base_commit": "a0c9f1c63927365e1ae63e04d4d91bfa2234e269",
       "repair_dsh_version": "0.1.1-rc.2",
       "provider": "deepseek-official",
-      "model": "grok-4.6",
-      "route_fingerprint": "7f4fa6d6f3bdb11cd21af3a943bd4af8273e85e2371ac98460f6217188d367ae",
-      "input_fingerprint": "02d94f131baa47b90e0d2a68467a09b1640b97fcb4792f6ce44e882776f155ee",
+      "model": "glm-5.3-flash",
+      "route_fingerprint": "9850ed862a9cfd836d66a21b9b35b76d25b538fa78f3d85af0e29f3014153aac",
+      "input_fingerprint": "2dd1a68972b93f2a671f76436a60fc96db626433178a74f8083ee02855fb638e",
       "usage": {
-        "inputTokens": 413642,
-        "outputTokens": 18270,
-        "cacheReadTokens": 1755648,
+        "inputTokens": 41577,
+        "outputTokens": 519,
+        "cacheReadTokens": 52544,
         "cacheWriteTokens": 0,
-        "reasoningTokens": 10619,
-        "totalTokens": 2187560,
-        "sessionFiles": 2
+        "reasoningTokens": 86,
+        "totalTokens": 94640,
+        "sessionFiles": 1
       },
       "estimated_cny": {
         "amount": null,
-        "band": "low_price",
+        "band": "peak",
         "revision": "deepseek-public-2026-08-21",
         "known": false
       },
-      "active_ms": 455523,
+      "active_ms": 152451,
       "converge_message_sent": false,
-      "converge_message_due": true,
+      "converge_message_due": false,
       "limits": {
         "max_tokens": 4000000,
         "max_cny": 3,
@@ -199,15 +235,15 @@
         "code": "BLOCKED_CONTRACT",
         "message": "repair determined that the reviewed smoke contract needs a separate human-reviewed change"
       },
-      "finished_at": "2026-09-04T05:13:58.326Z",
+      "finished_at": "2026-09-04T08:57:35.421Z",
       "lifetime_usage": {
-        "inputTokens": 118883,
-        "outputTokens": 6365,
-        "cacheReadTokens": 464000,
+        "inputTokens": 532525,
+        "outputTokens": 24635,
+        "cacheReadTokens": 2219648,
         "cacheWriteTokens": 0,
-        "reasoningTokens": 3234,
-        "totalTokens": 589248,
-        "sessionFiles": 1
+        "reasoningTokens": 13853,
+        "totalTokens": 2776808,
+        "sessionFiles": 3
       }
     }
   }
