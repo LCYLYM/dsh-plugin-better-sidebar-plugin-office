@@ -2,12 +2,11 @@ schema: 1
 requires_model_turn: false
 web:
   ready:
-    path: /
+    path: /manifest.webmanifest
     timeout_seconds: 120
   assertions:
     - id: dsh-web-shell
       method: GET
-      path: /
+      path: /manifest.webmanifest
       status: 200
       body_includes: DeepSeek
-
