@@ -127,6 +127,50 @@
         "totalTokens": 842415,
         "sessionFiles": 1
       }
+    },
+    "0.1.2-rc.1": {
+      "epoch": 1,
+      "history": [],
+      "lifetime_active_ms": 0,
+      "lifetime_attempts": 0,
+      "status": "BLOCKED",
+      "automatic_repair_used": true,
+      "attempts_used": 1,
+      "base_commit": "969d7db942a12ba156fbc4d6e27b38652b7b5d33",
+      "repair_dsh_version": "0.1.1-rc.2",
+      "provider": "deepseek-official",
+      "model": "grok-4.6",
+      "route_fingerprint": "7f4fa6d6f3bdb11cd21af3a943bd4af8273e85e2371ac98460f6217188d367ae",
+      "input_fingerprint": "85ddd1f6f18fcecb3ecdcbbaa1eef16e3348bec9c0260c90f238686a6c729ce5",
+      "usage": {
+        "inputTokens": 118883,
+        "outputTokens": 6365,
+        "cacheReadTokens": 464000,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 3234,
+        "totalTokens": 589248,
+        "sessionFiles": 1
+      },
+      "estimated_cny": {
+        "amount": null,
+        "band": "low_price",
+        "revision": "deepseek-public-2026-08-21",
+        "known": false
+      },
+      "active_ms": 233203,
+      "converge_message_sent": false,
+      "converge_message_due": false,
+      "limits": {
+        "max_tokens": 4000000,
+        "max_cny": 3,
+        "max_wall_minutes": 60,
+        "max_attempts": 2
+      },
+      "blocker": {
+        "code": "COMMAND_FAILED",
+        "message": "git diff --cached --binary --full-index --no-ext-diff timed out after 30000 ms"
+      },
+      "finished_at": "2026-09-03T12:21:32.057Z"
     }
   }
 }
