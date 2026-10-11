@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "resetBudget": "Y",
+  "resetBudget": "N",
   "verified": {
     "snapshot_key": "1522eab038e2df45b79bf4706a616fd34d81fd8bcfc4f31c807ee1d434cc006f",
     "source_commit": "0789d9bacfb20ff22e08109ec6cd9f66166ac9ef",
@@ -209,6 +209,50 @@
         "totalTokens": 589248,
         "sessionFiles": 1
       }
+    },
+    "0.2.1-alpha.2": {
+      "epoch": 1,
+      "history": [],
+      "lifetime_active_ms": 0,
+      "lifetime_attempts": 0,
+      "status": "BLOCKED",
+      "automatic_repair_used": true,
+      "attempts_used": 2,
+      "base_commit": "3dd65a5614837a6170ce0437b5935a8fe8e3b614",
+      "repair_dsh_version": "0.2.1-alpha.2",
+      "provider": "deepseek-official",
+      "model": "auto",
+      "route_fingerprint": "e3b3ba05dc17aaf6e7e9b09484aae5733da503811fb724d81f9b48d59edccb25",
+      "input_fingerprint": "229c37a916c936365a3addb47064287d9cce92d25515f4337c43ed537c1f576b",
+      "usage": {
+        "inputTokens": 5355737,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 5355737,
+        "sessionFiles": 2
+      },
+      "estimated_cny": {
+        "amount": null,
+        "band": "low_price",
+        "revision": "deepseek-public-2026-08-21",
+        "known": false
+      },
+      "active_ms": 2577532,
+      "converge_message_sent": false,
+      "converge_message_due": false,
+      "limits": {
+        "max_tokens": 4000000,
+        "max_cny": 3,
+        "max_wall_minutes": 60,
+        "max_attempts": 2
+      },
+      "blocker": {
+        "code": "BUDGET_EXHAUSTED",
+        "message": "本版本维修预算已用完，需要 resetBudget 或增加额度后才能继续。"
+      },
+      "finished_at": "2026-10-11T18:26:37.871Z"
     }
   }
 }
