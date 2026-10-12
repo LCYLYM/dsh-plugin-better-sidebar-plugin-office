@@ -10,7 +10,7 @@
  * live in THIS bundle only, keeping better-sidebar's own client bundle small.
  */
 import { createElement } from 'react'
-import type { ClientContext } from '@deepseek-ai/dsh-client-runtime/client'
+import type { Context as ClientContext } from '@deepseek-ai/cordis'
 // Type-only: pulls better-sidebar's `declare module 'cordis'` Context merge
 // (ctx.betterSidebar) and the FileViewerDescriptor type. Erased at build time,
 // so it never hits the client-bundle purity gate.
