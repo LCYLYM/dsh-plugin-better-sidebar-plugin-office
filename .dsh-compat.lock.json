@@ -2,9 +2,9 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "3c71a8db420571c750e383d57ef587184256b2aa669d3f5f0e9b41c365887122",
-    "source_commit": "f6dc290f62ae05127ad7ce606d090dd2e25b2e2b",
-    "source_tree_digest": "114ab0e52b3064c6bcc5e5e124cd9bc1143846f56e3baf51214f7d12aec627b7",
+    "snapshot_key": "1c51af93709dfd44ee6fa6fa344e189975071da9a75d02c28decb5921e07b25b",
+    "source_commit": "ae7bd6cc4c932c7e46690c7ec1e60514aaaff3af",
+    "source_tree_digest": "ef2c76004006bfc0ddc8ec971fec94358a204231e11865d471fb36386cc607cc",
     "dsh": {
       "package": "@deepseek-ai/dsh",
       "version": "0.2.1-alpha.2",
@@ -27,7 +27,7 @@
     },
     "runtime": {
       "node": {
-        "exactVersion": "24.13.1",
+        "exactVersion": "24.21.0",
         "effectiveRange": ">=20",
         "source": "package.json#engines.node",
         "declarations": {
@@ -44,14 +44,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "local",
-        "os": "darwin",
-        "arch": "arm64",
-        "githubActions": false
+        "actualLabel": "GitHub Actions 1000002462",
+        "os": "Linux",
+        "arch": "x64",
+        "githubActions": true
       }
     },
-    "verified_at": "2026-10-12T02:33:18.702Z",
-    "report_url": null
+    "verified_at": "2026-10-12T02:50:36.121Z",
+    "report_url": "https://github.com/LCYLYM/dsh-plugin-better-sidebar-plugin-office/actions/runs/38197325283"
   },
   "campaigns": {
     "0.1.1-rc.2": {
