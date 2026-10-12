@@ -217,7 +217,7 @@
       "lifetime_attempts": 0,
       "status": "BLOCKED",
       "automatic_repair_used": true,
-      "attempts_used": 5,
+      "attempts_used": 6,
       "base_commit": "2522d89956ad919fd1594ce13edf4becc573de3c",
       "repair_dsh_version": "0.2.1-alpha.2",
       "provider": "deepseek-official",
