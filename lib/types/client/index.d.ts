@@ -1,4 +1,4 @@
-import type { ClientContext } from '@deepseek-ai/dsh-client-runtime/client';
+import type { Context as ClientContext } from '@deepseek-ai/cordis';
 import type { FileViewerDescriptor } from 'dsh-better-sidebar';
 /** Services required before mounting: better-sidebar's client service. */
 export declare const inject: string[];
