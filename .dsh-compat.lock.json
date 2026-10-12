@@ -217,21 +217,21 @@
       "lifetime_attempts": 0,
       "status": "BLOCKED",
       "automatic_repair_used": true,
-      "attempts_used": 4,
-      "base_commit": "d2e7b2ec47925debc54c580d62fac071dc59d143",
+      "attempts_used": 6,
+      "base_commit": "2522d89956ad919fd1594ce13edf4becc573de3c",
       "repair_dsh_version": "0.2.1-alpha.2",
       "provider": "deepseek-official",
       "model": "auto",
       "route_fingerprint": "e3b3ba05dc17aaf6e7e9b09484aae5733da503811fb724d81f9b48d59edccb25",
-      "input_fingerprint": "6f93d5eb035f21de85f8895a754de9217e0db788cb46b426d1fa4707dfb8bf18",
+      "input_fingerprint": "19e11829e45c16efdb672eecc53175b4b669baa05d7894928b369a51cc0f5f7d",
       "usage": {
-        "inputTokens": 5599677,
-        "outputTokens": 2163,
+        "inputTokens": 6923464,
+        "outputTokens": 8897,
         "cacheReadTokens": 0,
         "cacheWriteTokens": 0,
         "reasoningTokens": 0,
-        "totalTokens": 5601840,
-        "sessionFiles": 4
+        "totalTokens": 6932361,
+        "sessionFiles": 6
       },
       "estimated_cny": {
         "amount": null,
@@ -239,20 +239,20 @@
         "revision": "deepseek-public-2026-08-21",
         "known": false
       },
-      "active_ms": 2754655,
+      "active_ms": 3722632,
       "converge_message_sent": true,
       "converge_message_due": false,
       "limits": {
         "max_tokens": 100000000,
         "max_cny": 3,
         "max_wall_minutes": 180,
-        "max_attempts": 4
+        "max_attempts": 6
       },
       "blocker": {
-        "code": "BUDGET_EXHAUSTED",
-        "message": "本版本维修预算已用完，需要 resetBudget 或增加额度后才能继续。"
+        "code": "COMMAND_FAILED",
+        "message": "dsh --profile headless --patch <REPAIR_OVERLAY> <REFINEMENT_PROMPT> exited with code 1"
       },
-      "finished_at": "2026-10-12T01:18:29.119Z"
+      "finished_at": "2026-10-12T02:05:10.274Z"
     }
   }
 }
