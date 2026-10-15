@@ -2,27 +2,27 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "3d19dc852ea260d9a39c9430114c8699c95a7c035da1c918644d9caba4bbad7c",
-    "source_commit": "2a76ba5f473c43cc0a0b9ec2131ae5936491f6b1",
-    "source_tree_digest": "2bc1647cfcc49b3dd717626745b2d6689a06edd339fde5f49fe6b653b5afd00f",
+    "snapshot_key": "f31ea8925a63e5c3404bf3545514689b61624f9cdb61199f78a09a2f42605a51",
+    "source_commit": "210055815b817f49fc8d75202a54678295463632",
+    "source_tree_digest": "d1e24425635fcd99d5a898a98f35ea8240c930f87638f3f2b189b3a615fedaae",
     "dsh": {
       "package": "@deepseek-ai/dsh",
-      "version": "0.2.1-alpha.2",
-      "integrity": "sha512-CkRE0uAOg2ldL2VpfF4cNRsl178CH5nM+8YklPrlMZl5ln0KhVfd42dJuRlgOXZmkpizCRvrVS8LAL+GKfgk0w==",
-      "graph_digest": "ce6e4a6e5b2620861b970b867cbdea7bc97c7fd976bbbb98010dc85a0818bf3d",
+      "version": "0.2.1-alpha.4",
+      "integrity": "sha512-nnJP3UyD0ldlAxH0BXhBUBYE3vI7w0DECncqzAl1EotHphE5l2ggwenoaxXiISJgDTHc5BV9JWI6YU5PSI9Ifg==",
+      "graph_digest": "32180aaff44ebd8e9a28a3caef753a8d1d12cd60a2c48263ed01c7dd7aef7f6c",
       "release": {
-        "tag": "dsh-v0.2.1-alpha.2",
-        "version": "0.2.1-alpha.2",
-        "commit": "d743267388641bc76f17c45ce8b4c231aed1d32c",
-        "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-alpha.2",
-        "publishedAt": "2026-10-09T11:09:26Z",
+        "tag": "dsh-v0.2.1-alpha.4",
+        "version": "0.2.1-alpha.4",
+        "commit": "86a402200d95fecef4529d969836f1fe13c6cb0d",
+        "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-alpha.4",
+        "publishedAt": "2026-10-15T13:40:02Z",
         "prerelease": true
       }
     },
     "plugin": {
       "package": "@huanlin/dsh-plugin-better-sidebar-plugin-office",
       "version": "0.1.0",
-      "tarball_sha256": "333c1c74a290a99f0177312655dc515b09d20d7c60b1a9e1f473fb389e3ce568",
+      "tarball_sha256": "b0f637490ecefded351cb6f85de5fc05bee940aaae428237734e5726c73d7488",
       "contract_sha256": "c657729dd57ee25c0ea1e68b58a3772facd62f7afa77161b2803d0f89391423a"
     },
     "runtime": {
@@ -44,14 +44,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000002471",
+        "actualLabel": "GitHub Actions 1000002671",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-10-12T03:27:08.903Z",
-    "report_url": "https://github.com/LCYLYM/dsh-plugin-better-sidebar-plugin-office/actions/runs/38199748471"
+    "verified_at": "2026-10-15T17:09:36.621Z",
+    "report_url": "https://github.com/LCYLYM/dsh-plugin-better-sidebar-plugin-office/actions/runs/38774684126"
   },
   "campaigns": {
     "0.1.1-rc.2": {
@@ -261,6 +261,46 @@
         "message": "dsh --profile headless --patch <REPAIR_OVERLAY> <REFINEMENT_PROMPT> exited with code 1"
       },
       "finished_at": "2026-10-12T02:05:10.274Z"
+    },
+    "0.2.1-alpha.4": {
+      "epoch": 1,
+      "history": [],
+      "lifetime_active_ms": 0,
+      "lifetime_attempts": 0,
+      "status": "PASS",
+      "automatic_repair_used": true,
+      "attempts_used": 1,
+      "base_commit": "210055815b817f49fc8d75202a54678295463632",
+      "repair_dsh_version": "0.2.1-alpha.2",
+      "provider": "deepseek-official",
+      "model": "auto",
+      "route_fingerprint": "e3b3ba05dc17aaf6e7e9b09484aae5733da503811fb724d81f9b48d59edccb25",
+      "input_fingerprint": "a4beba11d8398c85ccbaf230fadd989d7dc58296c464e2ff7557b8138cd0ee7b",
+      "usage": {
+        "inputTokens": 12581,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 12581,
+        "sessionFiles": 1
+      },
+      "estimated_cny": {
+        "amount": null,
+        "band": "low_price",
+        "revision": "deepseek-public-2026-08-21",
+        "known": false
+      },
+      "active_ms": 45737,
+      "converge_message_sent": false,
+      "converge_message_due": false,
+      "limits": {
+        "max_tokens": 100000000,
+        "max_cny": 3,
+        "max_wall_minutes": 180,
+        "max_attempts": 6
+      },
+      "finished_at": "2026-10-15T17:09:37.009Z"
     }
   }
 }
