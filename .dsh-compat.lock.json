@@ -261,6 +261,50 @@
         "message": "dsh --profile headless --patch <REPAIR_OVERLAY> <REFINEMENT_PROMPT> exited with code 1"
       },
       "finished_at": "2026-10-12T02:05:10.274Z"
+    },
+    "0.2.2-alpha.3": {
+      "epoch": 1,
+      "history": [],
+      "lifetime_active_ms": 0,
+      "lifetime_attempts": 0,
+      "status": "BLOCKED_CONFIG",
+      "automatic_repair_used": false,
+      "attempts_used": 0,
+      "base_commit": "210055815b817f49fc8d75202a54678295463632",
+      "repair_dsh_version": "0.2.1-alpha.2",
+      "provider": "deepseek-official",
+      "model": "auto",
+      "route_fingerprint": "e3b3ba05dc17aaf6e7e9b09484aae5733da503811fb724d81f9b48d59edccb25",
+      "input_fingerprint": "9c5615b76b9709c4d4f36df6eac97bc6526a57b5d494980da66d9a943664cf66",
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 0,
+        "sessionFiles": 1
+      },
+      "estimated_cny": {
+        "amount": null,
+        "band": "low_price",
+        "revision": "deepseek-public-2026-08-21",
+        "known": false
+      },
+      "active_ms": 242758,
+      "converge_message_sent": false,
+      "converge_message_due": false,
+      "limits": {
+        "max_tokens": 100000000,
+        "max_cny": 3,
+        "max_wall_minutes": 180,
+        "max_attempts": 6
+      },
+      "blocker": {
+        "code": "MODEL_PROVIDER_UNREACHABLE",
+        "message": "无法连接配置的模型 base URL。请检查 URL、DNS 和网络后手工重跑。"
+      },
+      "finished_at": "2026-11-03T19:39:16.166Z"
     }
   }
 }
